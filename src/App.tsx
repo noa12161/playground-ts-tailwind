@@ -1,13 +1,20 @@
 import React from "react";
-import ReactQueryProvider from "./context/ReactQueryProvider";
-import TestPage from "./pages/TestPage";
+import Layouts from "./components/layout/Layouts";
+import Default from "./tree/arborist/Default";
 import Wrapper from "./tree/arborist/Wrapper";
+import RC_Default from "./tree/rc/RC_Default";
 
 function App() {
+  // rc-tree
+  // return <RC_Default />;
+
+  // arborist
+  // return <Wrapper />;
+
   return (
-    <ReactQueryProvider>
-      <TestPage />;
-    </ReactQueryProvider>
+    <div className="bg-white grow flex flex-col">
+      <Layouts></Layouts>
+    </div>
   );
 }
 
