@@ -1,9 +1,14 @@
 import React from "react";
-import Default from "./tree/arborist/Default";
+import ReactQueryProvider from "./context/ReactQueryProvider";
+import TestPage from "./pages/TestPage";
 import Wrapper from "./tree/arborist/Wrapper";
 
 function App() {
-  return <Wrapper />;
+  return (
+    <ReactQueryProvider>
+      <TestPage />;
+    </ReactQueryProvider>
+  );
 }
 
 export default App;
